@@ -36,13 +36,11 @@ class Home extends Component {
                              this.state.products.map(
                                  product=><Col className="col-md-12 col-lg-3 mb-2 mb-lg-0">
                                  <Card style={{margin:"10px"}}>
-                              <Card.Title className="d-flex justify-content-between p-3 lead mb-0">Card Title</Card.Title>
+                              <Card.Title className="d-flex justify-content-between p-3 lead mb-0">{product.productName}</Card.Title>
                              <Card.Img variant="top" style={{height:"200px"}} src={product.imageUrl} />
                                    <Card.Body>
                
                                 <Card.Text className="d-flex justify-content-between mb-2">
-                 
-                                   <h5>{product.productName}</h5>
                                      <h5>{product.price}</h5>
                                     </Card.Text>
                                      <div className="d-flex justify-content-between mb-2">

@@ -3,9 +3,9 @@ import {Link} from 'react-router-dom';
 import { Navbar, Nav, Container, NavDropdown, Row,Col,Table} from 'react-bootstrap';
 import {Form, FormControl, Button,Card} from 'react-bootstrap';
 import NavigationBar from '../nav/NavigationBar';
-import IncDec from './IncDec';
 
-class ViewCart extends Component{
+
+class Order extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -30,7 +30,7 @@ class ViewCart extends Component{
                           <th>Product Name</th>
                           <th>Price</th>
                           <th>Quantity</th>
-                          <th>Remove</th>
+                          
                       </tr>
                     
                     </thead>
@@ -41,7 +41,7 @@ class ViewCart extends Component{
                                 <tr key ={item.productId}>
                                 <td className="text-break text-break text-center text-wrap">{item.productName}</td>
                                 <td className="text-break text-break text-center text-wrap">{item.productPrice}</td>
-                                <td><IncDec/> </td>
+                                <td className="text-break text-break text-center text-wrap">{item.productQuantity}</td>
                                 </tr>
                             )
                         }
@@ -51,8 +51,15 @@ class ViewCart extends Component{
                 </Row>
                 
             </Container>
+            <Container>
+                <Row>
+                    <Col>
+                    <Button type ="submit" variant="primary"> Pay </Button>
+                    </Col>
+                </Row>
+            </Container>
             </div>
         );
     }
 }
-export default ViewCart;
+export default Order;

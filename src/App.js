@@ -11,6 +11,8 @@ import ViewProduct from './components/Admin/ViewProduct'
 import EditProduct from './components/Admin/EditProduct';
 import AddProduct from './components/Admin/AddProduct';
 import ViewCart from './components/Cart/ViewCart';
+import Order from './components/Order/Order';
+import AdminOrder from './components/Admin/AdminOrder';
 
 function App() {
   return (
@@ -29,6 +31,9 @@ function App() {
          <Route path ="/addProduct-Editproduct/:id" component={EditProduct}/>
          <Route path ="/addProduct-addProduct" component={AddProduct}/>
          <Route path ="/cart" component={ViewCart}/>
+         <Route path="/orders" component={Order}/>
+         <Route path="/admin-order" component={AdminOrder}/>
+         
         
         </Switch>
 

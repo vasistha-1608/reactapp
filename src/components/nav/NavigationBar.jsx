@@ -17,6 +17,9 @@ render(){
             <Nav.Item className="mb-3 itemDesign">
             <Link to ="/cart"> <Button className="buttonDesign" variant="dark">cart</Button></Link>
             </Nav.Item>
+            <Nav.Item className="mb-3 itemDesign">
+            <Link to ="/orders"> <Button className="buttonDesign" variant="dark"> My orders</Button></Link>
+            </Nav.Item>
            </Nav>
           <Nav>
           <Nav.Item className="mb-3">
